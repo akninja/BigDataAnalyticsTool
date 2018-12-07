@@ -22,7 +22,7 @@ def extractCol(filepath, n):
 
 def booleanToCol(out):
         normal = "normal.\n"
-        newCol = open("C:/Users/ajkno/Desktop/New42.txt", 'w+')
+        #newCol = open(""your/destination/filepath"", 'w+')
         for i in out:
             if i == normal:
                     newCol.write("0, \n")
@@ -77,9 +77,9 @@ def stats(out, unique):
 #Note that I have made the filepath fixed.
 #Uncomment lines 38/39 to take a user input for filepath
 def main():
-    #filepath = "C:\Data\kddcup.data.txt" #input("Enter file path: ")
-    f2 = "C:/Data/kddcup.data.txt"
-    newFourTwo = "C:/Users/ajkno/Desktop/New42.txt"
+    #filepath = ""your/data source file/filepath" #input("Enter file path: ")
+    # f2 = "your/data source file/filepath"
+    # newFourTwo = ""your/destination/filepath""
     for n in range (41, 42):
         print("\nColumn", n , "Classes\n\n")
         uniqueClasses(f2, n)
